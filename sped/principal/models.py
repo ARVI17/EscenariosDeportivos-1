@@ -4,10 +4,41 @@ from django.db import models
 
 class disciplina_deportivas(models.Model):
     id=models.AutoField(primary_key=True)
-    first_name = models.CharField(max_length=30)
-    last_name = models.CharField(max_length=30)
+    nombre = models.CharField(max_length=30)
+    descripcion = models.CharField(max_length=30)
 
-disciplina_deportivas
-escenarios_deportivos
-eventos
-tipo_
+class escenarios_deportivos(models.Model):
+    id=models.AutoField(primary_key=True)
+    nombre = models.CharField(max_length=30)
+    descripcion = models.CharField(max_length=30)
+
+class eventos(models.Model):
+    id=models.AutoField(primary_key=True)
+    nombre = models.CharField(max_length=30)
+    descripcion = models.CharField(max_length=30)
+
+class tipo_de_solicitante(models.Model):
+    id=models.AutoField(primary_key=True)
+    nombre = models.CharField(max_length=30)
+    descripcion = models.CharField(max_length=30)
+
+class creador_de_empleados(models.Model):
+    id=models.AutoField(primary_key=True)
+    nombre = models.CharField(max_length=30)
+    descripcion = models.CharField(max_length=30)
+
+class regimen(models.Model):
+    id=models.AutoField(primary_key=True)
+    nombre = models.CharField(max_length=30)
+    descripcion = models.CharField(max_length=30)
+
+class gestor(models.Model):
+    id=models.AutoField(primary_key=True)
+    nombre = models.CharField(max_length=30)
+    descripcion = models.CharField(max_length=30)
+
+class supervisor(models.Model):
+    id=models.AutoField(primary_key=True)
+    nombre = models.CharField(max_length=30)
+    descripcion = models.CharField(max_length=30)
+
